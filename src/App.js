@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Sidebar from "./components/sidebar";
+import Title from "./components/title";
+import Home from "./components/home";
+import Experience from "./components/experience";
+import Projects from "./components/projects";
+import Contact from "./components/contact";
+import "./App.css";
 
 function App() {
+  const separate = false;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Sidebar separate={separate}>
+          <Title />
+          {separate ? (
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="experience" element={<Experience />} />
+              <Route path="projects" element={<Projects />} />
+              <Route path="contact" element={<Contact />} />
+            </Routes>
+          ) : (
+            <>
+              <Home />
+              <a id="experience" />
+              <Experience />
+              <a id="projects" />
+              <Projects />
+              <a id="contact" />
+              <Contact />
+            </>
+          )}
+        </Sidebar>
+      </div>
+    </BrowserRouter>
   );
 }
 

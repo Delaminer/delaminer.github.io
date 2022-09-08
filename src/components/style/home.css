@@ -1,0 +1,12 @@
+.home {
+    display: flex;
+    flex-direction: row;
+}
+.home-text {
+    flex: 1;
+
+
+}
+.home-image {
+    flex: 1;
+}
