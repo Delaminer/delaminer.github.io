@@ -11,6 +11,7 @@ function Sidebar({ children, separate }) {
         {[
           { name: "Home", to: "" },
           { name: "Experience", to: "experience" },
+          { name: "Coursework", to: "coursework" },
           { name: "Projects", to: "projects" },
           { name: "Contact", to: "contact" },
         ].map(SidebarItem)}

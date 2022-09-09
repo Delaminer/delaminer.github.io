@@ -1,2 +1,11 @@
-.experience {
+.experience .type {
+    font-weight: bold;
+    margin-right: 10px;
+}
+.experience .location {
+    background-color: rgb(116, 203, 210);
+    border-radius: 50px;
+    padding: 5px 5px;
+    min-width: 30px;
+    margin: 0 5px;
 }

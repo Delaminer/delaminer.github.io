@@ -57,7 +57,7 @@ export default Contact;
 
 const ContactIcon = ({ title, subtitle, link, icon }) => {
   return (
-    <div className="contact-icon">
+    <div className="contact-icon" key={title}>
       {icon}
       <div className="contact-title">{title}</div>
       {subtitle &&

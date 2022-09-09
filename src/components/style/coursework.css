@@ -1,0 +1,42 @@
+.department-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.department {
+    border: solid thick #00274C;
+    border-radius: 30px;
+}
+
+.department h4 {
+    text-align: center;
+}
+
+.department li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.course-item .code {
+    border: solid thin black;
+    margin-right: 10px;
+}
+.course-item .grade {
+    background-color: rgb(116, 203, 210);
+    border-radius: 50px;
+    padding: 5px 5px;
+    min-width: 30px;
+    margin: 0 5px;
+    float: right;
+    text-align: center;
+}
+
+.award {
+    border: solid thick rgb(116, 203, 210);
+    border-radius: 50px;
+    padding: 5px 5px;
+    min-width: 30px;
+    margin: 0 5px;
+    text-align: center;
+}
