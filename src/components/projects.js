@@ -12,6 +12,23 @@ const projects = [
     ],
   },
   {
+    name: "Business Student Customer Relationship Management (CRM) Application",
+    languages: ["Javascript", "HMTL", "CSS", "React", "NextJS", "Figma"],
+    description: [
+      "Worked with 2 other software engineers and 1 user-experience (UX) student to develop a CRM intended for business students to build their networks, providing scheduled reminders to contact important contacts",
+      "Developed a chrome extension using React and NextJS, and designed using Figma. Research was conducted with business students on an MVP to determine importance of features, and was modified to account for results"
+    ],
+  },
+  {
+    name: "ALFA Language Type Synthesis, Analysis, and Evaluation",
+    languages: ["OCaml", "ALFA"],
+    description: [
+      "Developed type synthesis and analysis for novel functional language \"ALFA\", determining the types of expressions created in this language using OCaml, and analyzing if expressions analyze to an input type. Included complex types such as Sum, Product, and recursive types",
+      "Developed evaluator for ALFA using OCaml, evaluating expressions created in ALFA including recursive expressions, imperative expressions with memory, function application, and case evaluation",
+      "Developed using Test-Driven Development (TDD), encasing all defined properties of the language with unit tests which were validated with formal verification, providing proofs for each evaluation"
+    ],
+  },
+  {
     name: "Stock Market and Trading Simulator",
     languages: ["C++"],
     description: [

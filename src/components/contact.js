@@ -16,7 +16,7 @@ function Contact() {
         {[
           {
             title: "Phone",
-            subtitle: "517 294 4779",
+            subtitle: "(517) 294-4779",
             icon: <AiFillPhone size={25} />,
           },
           {
@@ -43,10 +43,10 @@ function Contact() {
             link: "http://alexanderdelaiglesia.com/",
             icon: <AiOutlineGlobal size={25} />,
           },
-          {
-            title: "Howell, MI",
-            icon: <BiCurrentLocation size={25} />,
-          },
+          // {
+          //   title: "Howell, MI",
+          //   icon: <BiCurrentLocation size={25} />,
+          // },
         ].map(ContactIcon)}
       </div>
     </div>

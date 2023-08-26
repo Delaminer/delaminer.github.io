@@ -11,8 +11,7 @@ function Home() {
           Engineering and Mathematics.
         </p>
         <p>
-          My interests are in Algorithms, Machine Learning, and Front End
-          Development.
+          I am currently in my final year of my undergrad. After graduating, I will go through Michigan's SUGS program to pursue my Master's degree in Computer Science.
         </p>
         <a
           href="https://drive.google.com/file/d/1ftYdAuW-9rzo1lf20h_ZvqYOQ-SxT5qb/view?usp=sharing"

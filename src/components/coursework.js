@@ -3,17 +3,52 @@ import "./style/coursework.css";
 
 const courses = [
   {
-    department: "CS Courses",
+    department: "Computer Science Courses",
     classes: [
+      {
+        code: "EECS 482",
+        name: "Operating Systems",
+        grade: "In Progress",
+      },
+      {
+        code: "EECS 442",
+        name: "Computer Vision",
+        grade: "In Progress",
+      },
+      {
+        code: "EECS 497",
+        name: "Human-Centered Software Development",
+        grade: "In Progress",
+      },
+      {
+        code: "EECS 487",
+        name: "Natural Language Processing",
+        grade: "A",
+      },
+      {
+        code: "EECS 388",
+        name: "Computer Security",
+        grade: "A+",
+      },
+      {
+        code: "EECS 490",
+        name: "Programming Languages",
+        grade: "A",
+      },
       {
         code: "EECS 477",
         name: "Algorithms",
-        grade: "In Progress",
+        grade: "A+",
       },
       {
         code: "EECS 445",
         name: "Machine Learning",
-        grade: "In Progress",
+        grade: "A-",
+      },
+      {
+        code: "EECS 492",
+        name: "Artificial Intelligence",
+        grade: "A",
       },
       {
         code: "EECS 281",
@@ -46,9 +81,14 @@ const courses = [
     department: "Math Courses",
     classes: [
       {
+        code: "MATH 465",
+        name: "Combinatorics",
+        grade: "A+",
+      },
+      {
         code: "MATH 425",
         name: "Probability",
-        grade: "In Progress",
+        grade: "A+",
       },
       {
         code: "MATH 216",
@@ -56,12 +96,12 @@ const courses = [
         grade: "A",
       },
       {
-        code: "Math 215",
+        code: "MATH 215",
         name: "Vector Calculus",
         grade: "A,",
       },
       {
-        code: "Math 214",
+        code: "MATH 214",
         name: "Linear Algebra",
         grade: "A",
       },
@@ -72,7 +112,16 @@ const courses = [
 function Coursework() {
   return (
     <div className="coursework">
-      <h2>Course Work</h2>
+      <h2>Coursework</h2>
+      <p>
+        <b>
+          <i>
+            Master of Science Engineering in Computer Science (intended)
+          </i>
+          <span> at the </span>
+          University of Michigan (August 2024 - May 2025)
+        </b>
+      </p>
       <p>
         <b>
           <i>
@@ -80,18 +129,27 @@ function Coursework() {
             Mathematics
           </i>
           <span> at the </span>
-          University of Michigan
+          University of Michigan (August 2021 - May 2024)
         </b>
       </p>
       <p>
-        Overall GPA: <b>4.0 / 4.0</b>
+        Overall GPA: <b>3.99 / 4.0</b>
+      </p>
+      <p>
+        Professional Engineering Honor Societies: Member of Tau Beta Pi (TBP), Eta Kappa Nu (HKN) and IEEE
       </p>
       <p>
         <span className="award">
           <BsFillAwardFill /> 2021
         </span>
-        Awarded the William J. Branstrom Freshman Prize (given to the upper five
-        percent of first year undergraduates)
+        <b>William J. Branstrom Freshman Prize</b> <i>(given to the upper five
+        percent of first year undergraduates)</i>
+      </p>
+      <p>
+        <span className="award">
+          <BsFillAwardFill />
+        </span>
+        <b>James B. Angell Scholar</b> awarded for Fall 2021, Fall 2022, Winter 2022 <i>(given to students with all As)</i>
       </p>
       <div className="department-container">
         {courses.map(DepartmentSection)}
@@ -105,7 +163,7 @@ export default Coursework;
 const DepartmentSection = ({ department, classes }) => (
   <div key={department} class="department">
     <h4>{department}</h4>
-    <ul>{classes.map(CourseItem)}</ul>
+      <ul>{classes.sort((a, b) => b.code.localeCompare(a.code)).map(CourseItem)}</ul>
   </div>
 );
 
