@@ -1,3 +1,8 @@
+# How to deploy this website
+
+Run `npm run build && npm run deploy`. A `github-pages` deployment should start on GitHub. Once it finishes, `delaminer.github.io` is updated. However, a 404 then shows up on `alexanderdelaiglesia.com`. Then, in GitHub make sure `alexanderdelaiglesia.com` is added as the custom domain. It will take a while for this to update.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
