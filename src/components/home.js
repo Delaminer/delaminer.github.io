@@ -1,6 +1,9 @@
 import profileImage from "../profile-image.png";
 import "./style/home.css";
 
+const oldResume = "https://drive.google.com/file/d/1ftYdAuW-9rzo1lf20h_ZvqYOQ-SxT5qb/view?usp=sharing";
+const newResume = "https://drive.google.com/file/d/1blI85aTVQDOKWdlSRz-jQsfhTY8goAez/view?usp=sharing";
+
 function Home() {
   return (
     <div className="home">
@@ -14,7 +17,7 @@ function Home() {
           I am currently in my final year of my undergrad. After graduating, I will go through Michigan's SUGS program to pursue my Master's degree in Computer Science.
         </p>
         <a
-          href="https://drive.google.com/file/d/1ftYdAuW-9rzo1lf20h_ZvqYOQ-SxT5qb/view?usp=sharing"
+          href={newResume}
           target="_blank"
         >
           <button className="resume">Download My Resume</button>
